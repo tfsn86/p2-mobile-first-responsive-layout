@@ -1,0 +1,35 @@
+/* Web Fonts -------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap');
+
+/* Base Styles -------------------- */
+
+/* Pseudo-classes ------------------ */
+
+/* Main Styles --------------------- */
+.main-header,
+.main-footer {
+	text-align: center;
+}
+
+.main-nav a {
+	/* font-size: 0.95em; */
+	/* color: #3acec2; */
+	text-transform: uppercase;
+}
+
+ul {
+	list-style: none;
+}
+
+/* Layout Styles ------------------ */
+
+/* Floated Columns ------------------ */
+
+/* Float Clearfix ------------------ */
+
+/* Media Queries -------------------- */
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1024px) {
+}
