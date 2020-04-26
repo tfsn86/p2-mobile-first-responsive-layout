@@ -23,9 +23,14 @@ h1 {
 	padding-bottom: 16px;
 }
 
+p {
+	font-weight: lighter;
+}
+
 a,
 h1,
-h2 {
+h2,
+#footer-name {
 	font-weight: bold;
 	color: #4d4d4d;
 }
@@ -54,7 +59,8 @@ img {
 
 /* Main Styles --------------------- */
 .main-header,
-.main-footer {
+.main-footer,
+.bottom-container {
 	text-align: center;
 	background-color: #fafafa;
 }
@@ -97,14 +103,25 @@ ul {
 }
 
 .portfolio-container {
-	padding-left: 20px;
-	padding-right: 20px;
 	text-align: center;
 	margin-bottom: 40px;
 }
 
 #profile-text {
 	color: #a6a6a6;
+}
+
+.bottom-container {
+	border-top: 1px solid #999999;
+	margin-top: 50px;
+}
+
+#footer-name {
+	float: left;
+}
+
+#footer-link {
+	float: right;
 }
 
 /* Floated Columns ------------------ */
