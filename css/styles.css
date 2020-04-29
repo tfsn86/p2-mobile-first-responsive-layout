@@ -124,13 +124,98 @@ ul {
 	float: right;
 }
 
+.bottom-nav {
+	display: none;
+}
+
 /* Floated Columns ------------------ */
 
 /* Float Clearfix ------------------ */
 
 /* Media Queries -------------------- */
 @media (min-width: 768px) {
+	.main-nav li {
+		display: inline-block;
+		margin-left: 30px;
+	}
+
+	.container {
+		padding-right: 1.3em;
+		padding-left: 1.3em;
+	}
+
+	.col {
+		float: right;
+		width: 50%;
+	}
+
+	.portfolio-container {
+		float: left;
+		width: 50%;
+		margin: auto;
+		padding-left: 0.5em;
+		padding-right: 0.5em;
+		padding-top: 50px;
+	}
+
+	#profile-text {
+		text-align: left;
+		margin: 0;
+		padding-right: 30px;
+	}
+
+	.clearfix::after {
+		content: '';
+		clear: both;
+		display: table;
+	}
+
+	.main-nav a {
+		background-color: #fafafa;
+	}
+
+	#footer-link {
+		display: none;
+	}
+
+	.bottom-nav {
+		display: block;
+		float: right;
+	}
+
+	.bottom-nav li {
+		font-weight: bold;
+		display: inline-block;
+		margin-left: 30px;
+		margin-top: 16px;
+	}
+
+	.bottom-container {
+		padding-bottom: 15px;
+	}
 }
 
 @media (min-width: 1024px) {
+	.container {
+		padding-right: 4em;
+		padding-left: 4em;
+		padding-top: 30px;
+	}
+
+	.portfolio-container {
+		float: left;
+		width: 33%;
+		margin: auto;
+		padding-left: 0.5em;
+		padding-right: 0.5em;
+		padding-top: 25px;
+	}
+
+	#name {
+		float: left;
+	}
+
+	.main-nav {
+		float: right;
+	}
 }

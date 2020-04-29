@@ -9,24 +9,31 @@
 	</head>
 	<body>
 		<header id="top" class="main-header">
-			<div class="container">
-				<h1>Torben</h1>
+			<div class="container clearfix">
+				<h1 id="name">Torben</h1>
 				<ul class="main-nav">
 					<li><a href="#">Home</a></li>
-					<li><a href="#">Portfolio</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#contact">Contact</a></li>
 				</ul>
-				<img src="images/responsive-layout-profile.png" alt="Profile photo" />
-				<p id="profile-text">
-					Hi! I am a developer that loves to build websites and web
-					applications. I recently finished a tech degree in full stack
-					JavaScript at Treehouse. I am excited to put all my skills to use!
-				</p>
+			</div>
+
+			<div class="container clearfix">
+				<div class="col">
+					<img src="images/responsive-layout-profile.png" alt="Profile photo" />
+				</div>
+				<div class="col">
+					<p id="profile-text">
+						Hi! I am a developer that loves to build websites and web
+						applications. I recently finished a tech degree in full stack
+						JavaScript at Treehouse. I am excited to put all my skills to use!
+					</p>
+				</div>
 			</div>
 		</header>
 		<div>
-			<div class="container">
-				<h2>Portfolio</h2>
+			<div class="container clearfix">
+				<h2 id="portfolio">Portfolio</h2>
 				<div class="portfolio-container">
 					<img src="images/portfolio-1.png" alt="Marketing Page" />
 					<h3>Marketing Page</h3>
@@ -68,16 +75,21 @@
 		</div>
 		<footer class="main-footer">
 			<div class="container">
-				<h2>Contact</h2>
+				<h2 id="contact">Contact</h2>
 				<p>
 					If you want more information about my project feel free to reach out.
 				</p>
 				<p>Phone <strong>12345678</strong></p>
 				<p>Email <strong>email@email.com</strong></p>
 
-				<div class="bottom-container">
+				<div class="bottom-container clearfix">
 					<p id="footer-name">Torben</p>
 					<p id="footer-link"><a href="#">Back to top</a></p>
+					<ul class="bottom-nav">
+						<li><a href="#">Home</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
 				</div>
 			</div>
 		</footer>
