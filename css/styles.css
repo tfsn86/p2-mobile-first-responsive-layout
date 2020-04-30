@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap');
 
 /* Base Styles -------------------- */
-
 * {
 	box-sizing: border-box;
 }
@@ -39,7 +38,7 @@ h2 {
 	text-transform: uppercase;
 	font-size: 1em;
 	margin-top: 50px;
-	margin-bottom: 50px;
+	margin-bottom: 20px;
 }
 
 h2,
@@ -55,14 +54,12 @@ img {
 	max-width: 100%;
 }
 
-/* Pseudo-classes ------------------ */
-
 /* Main Styles --------------------- */
 .main-header,
 .main-footer,
 .bottom-container {
 	text-align: center;
-	background-color: #fafafa;
+	background-color: #f2efed;
 }
 
 .main-header {
@@ -74,7 +71,7 @@ img {
 }
 
 .main-footer {
-	padding-top: 20px;
+	margin-top: 70px;
 }
 
 .main-nav {
@@ -93,10 +90,19 @@ img {
 
 ul {
 	list-style: none;
+	margin: auto;
+}
+
+/* Floated Elements ------------------ */
+#footer-name {
+	float: left;
+}
+
+#footer-link {
+	float: right;
 }
 
 /* Layout Styles ------------------ */
-
 .container {
 	padding-left: 1em;
 	padding-right: 1em;
@@ -116,21 +122,34 @@ ul {
 	margin-top: 50px;
 }
 
-#footer-name {
-	float: left;
-}
-
-#footer-link {
-	float: right;
-}
-
 .bottom-nav {
 	display: none;
 }
 
-/* Floated Columns ------------------ */
+.skills-list {
+	text-align: center;
+}
+
+.skills-list li {
+	display: inline-block;
+	margin-left: 0.4em;
+	margin-right: 0.4em;
+	padding: 0.4em;
+	background-color: #f5695f;
+	border-radius: 10%;
+}
+
+/* Pseudo-classes ------------------ */
+a:hover {
+	color: rgba(191, 71, 11, 0.4);
+}
 
 /* Float Clearfix ------------------ */
+.clearfix::after {
+	content: '';
+	clear: both;
+	display: table;
+}
 
 /* Media Queries -------------------- */
 @media (min-width: 768px) {
@@ -164,14 +183,8 @@ ul {
 		padding-right: 30px;
 	}
 
-	.clearfix::after {
-		content: '';
-		clear: both;
-		display: table;
-	}
-
 	.main-nav a {
-		background-color: #fafafa;
+		background-color: #f2efed;
 	}
 
 	#footer-link {
@@ -196,6 +209,10 @@ ul {
 }
 
 @media (min-width: 1024px) {
+	.col {
+		text-align: right;
+	}
+
 	.container {
 		padding-right: 4em;
 		padding-left: 4em;
@@ -205,7 +222,6 @@ ul {
 	.portfolio-container {
 		float: left;
 		width: 33%;
-		margin: auto;
 		padding-left: 0.5em;
 		padding-right: 0.5em;
 		padding-top: 25px;
